@@ -1,0 +1,32 @@
+import Location from "../icons/Location";
+import styles from "./Card.module.css";
+const Card = (car) => {
+  const {
+    id,
+    name,
+    model,
+    year,
+    distance,
+    location,
+    price,
+    description,
+    image,
+    category,
+  } = car;
+  return (
+    <div className={styles.container}>
+      <img src={image} className={styles.image} />
+      <h4 className={styles.title}>{`${name} ${model}`}</h4>
+      <p className={styles.detail}>{`${year} . ${distance}`}</p>
+      <div className={styles.footer}>
+        <p>$ {price}</p>
+        <div className={styles.location}>
+          <p>{location}</p>
+          <Location />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Card;
