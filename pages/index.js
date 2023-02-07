@@ -1,8 +1,17 @@
+import AllButtom from "@/components/module/AllButtom";
+import Categories from "@/components/module/Categories";
+import SearchBar from "@/components/module/SearchBar";
+import CarsPage from "@/components/templates/CarsPage";
+import carsData from "@/data/dataCar";
+
 const Index = () => {
-  console.log('hi');
+  const car = carsData.slice(0, 3);
   return (
     <div>
-      <p>test</p>
+      <SearchBar />
+      <Categories/>
+      <AllButtom />
+      <CarsPage data={car} />
     </div>
   );
 };
