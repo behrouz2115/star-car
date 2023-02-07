@@ -18,7 +18,6 @@ const CarDetail = (deta) => {
     image,
     category,
   } = deta;
-  console.log(name);
   return (
     <div className={styles.container}>
       <img className={styles.image} src={image} />
