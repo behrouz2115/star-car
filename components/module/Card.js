@@ -10,9 +10,7 @@ const Card = (car) => {
     distance,
     location,
     price,
-    description,
     image,
-    category,
   } = car;
   return (
     <Link href={`/cars/${id}`}>

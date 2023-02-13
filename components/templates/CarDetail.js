@@ -7,7 +7,6 @@ import Road from "../icons/Road";
 import styles from "./CarDetail.module.css";
 const CarDetail = (deta) => {
   const {
-    id,
     name,
     model,
     year,
@@ -16,7 +15,6 @@ const CarDetail = (deta) => {
     price,
     description,
     image,
-    category,
   } = deta;
   return (
     <div className={styles.container}>
