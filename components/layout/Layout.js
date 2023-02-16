@@ -13,8 +13,8 @@ const Layout = ({ children }) => {
       <div className={styles.container}>{children}</div>
       <footer className={styles.footer}>
         <a href="#" target="_blank">
-          behrouz2115
-        </a>{" "}   
+          GitHub:behrouz2115
+        </a>  
         &copy;
       </footer>
     </>
